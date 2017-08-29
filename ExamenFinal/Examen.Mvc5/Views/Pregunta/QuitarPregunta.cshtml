@@ -1,0 +1,50 @@
+﻿@model Examen.Domain.Pregunta
+
+@{
+    ViewBag.Title = "QuitarPregunta";
+}
+
+
+
+<h3>Seguro de eliminar?</h3>
+
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EvaluacionId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EvaluacionId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Texto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Texto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OpcionMarcada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Texto)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar" class="btn btn-default" /> |
+            <br />
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

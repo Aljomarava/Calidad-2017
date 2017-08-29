@@ -1,0 +1,28 @@
+﻿@model Examen.Domain.Evaluacion
+
+@{
+    ViewBag.Title = Model.Descripcion;
+}
+
+<h2>@ViewBag.Title</h2>
+<h3>@Model.Fecha</h3>
+
+<p>
+    @Html.ActionLink("Agregar Pregunta", "AgregarPregunta", new { evaluacionId = Model.Id })
+</p>
+
+<hr />
+@foreach (var pregunta in Model.Preguntas)
+{
+    <b>@pregunta.Texto</b>
+    @Html.ActionLink("Editar Pregunta", "EditarPregunta", new { preguntaId = Model.Id })
+    @Html.ActionLink("Quitaar Pregunta", "QuitarPregunta", new { preguntaId = Model.Id })
+    <br />
+
+    foreach (var opcion in pregunta.Opciones)
+    {
+        @opcion.Texto
+        <br />
+    }
+    <br />
+}

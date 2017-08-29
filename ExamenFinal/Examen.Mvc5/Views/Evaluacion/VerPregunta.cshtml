@@ -1,0 +1,80 @@
+﻿@model IEnumerable<Examen.Domain.Pregunta>
+
+@{
+    ViewBag.Title = "VerPregunta";
+}
+
+<h2>VerPregunta</h2>
+<h2>@Html.DisplayNameFor(model => model.Evaluacion.Fecha)</h2>
+
+
+
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                <br />
+                <div class="form-horizontal">
+                    <div class="col-md-10">
+                        @Html.DisplayNameFor(model => model.EvaluacionId)
+                    </div>
+                </div>
+
+                <br />
+                <div class="form-horizontal">
+                    <div class="col-md-10">
+                        @Html.DisplayNameFor(model => model.Texto)
+                    </div>
+                </div>
+
+                <br />
+                <div class="form-horizontal">
+                    <div class="col-md-10">
+                        @Html.DisplayNameFor(model => model.OpcionMarcada)
+                    </div>
+                </div>
+
+                <br />
+                <div class="form-horizontal"> 
+                    <div class="col-md-10"> 
+                    @Html.DisplayNameFor(model => model.Opciones) 
+                    </div>
+                 </div>
+
+            </th>
+
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th>
+                    <br />
+                    <div class="form-horizontal">
+                        <div class="col-md-10">
+                            @Html.DisplayFor(modelItem => item.EvaluacionId)
+                        </div>
+                    </div>
+
+                    <br />
+                    <div class="form-horizontal">
+                        <div class="col-md-10">
+                            @Html.DisplayFor(modelItem => item.Texto)
+                        </div>
+                    </div>
+
+                    @Html.DisplayFor(modelItem => item.OpcionMarcada)
+
+                    @Html.DisplayFor(modelItem => item.Opciones)
+
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+
+                </th>
+            </tr>
+        }
+
+    </table>
