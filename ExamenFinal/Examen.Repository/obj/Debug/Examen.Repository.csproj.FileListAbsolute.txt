@@ -24,29 +24,3 @@ C:\Users\bajos\documents\visual studio 2015\Projects\ExamenFinal\Examen.Reposito
 C:\Users\bajos\documents\visual studio 2015\Projects\ExamenFinal\Examen.Repository\obj\Debug\Examen.Repository.Migrations.nulos.resources
 C:\Users\bajos\documents\visual studio 2015\Projects\ExamenFinal\Examen.Repository\obj\Debug\Examen.Repository.csproj.GenerateResource.Cache
 C:\Users\bajos\documents\visual studio 2015\Projects\ExamenFinal\Examen.Repository\obj\Debug\Examen.Repository.Migrations.ver.resources
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\bin\Debug\Examen.Repository.dll.config
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\bin\Debug\Examen.Repository.dll
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\bin\Debug\Examen.Repository.pdb
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\bin\Debug\EntityFramework.dll
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\bin\Debug\Examen.Domain.dll
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\bin\Debug\Microsoft.Practices.ServiceLocation.dll
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\bin\Debug\Microsoft.Practices.Unity.dll
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\bin\Debug\Examen.Domain.pdb
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\bin\Debug\EntityFramework.xml
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\bin\Debug\Microsoft.Practices.ServiceLocation.xml
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\bin\Debug\Microsoft.Practices.Unity.xml
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\bin\Debug\es\EntityFramework.resources.dll
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\bin\Debug\es\EntityFramework.SqlServer.resources.dll
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\obj\Debug\Examen.Repository.csprojResolveAssemblyReference.cache
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\obj\Debug\Examen.Repository.Migrations.nulos.resources
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\obj\Debug\Examen.Repository.Migrations.ver.resources
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\obj\Debug\Examen.Repository.csproj.GenerateResource.Cache
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\obj\Debug\Examen.Repository.dll
-C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Repository\obj\Debug\Examen.Repository.pdb
