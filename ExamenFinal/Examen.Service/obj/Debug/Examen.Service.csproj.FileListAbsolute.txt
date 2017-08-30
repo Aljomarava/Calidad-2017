@@ -19,3 +19,24 @@ C:\Users\bajos\documents\visual studio 2015\Projects\ExamenFinal\Examen.Service\
 C:\Users\bajos\documents\visual studio 2015\Projects\ExamenFinal\Examen.Service\bin\Debug\EntityFramework.dll
 C:\Users\bajos\documents\visual studio 2015\Projects\ExamenFinal\Examen.Service\bin\Debug\EntityFramework.xml
 C:\Users\bajos\documents\visual studio 2015\Projects\ExamenFinal\Examen.Service\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Service\bin\Debug\Examen.Service.dll
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Service\bin\Debug\Examen.Service.pdb
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Service\bin\Debug\Examen.Domain.dll
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Service\bin\Debug\Examen.Repository.dll
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Service\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Service\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Service\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Service\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Service\bin\Debug\EntityFramework.dll
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Service\bin\Debug\Examen.Domain.pdb
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Service\bin\Debug\Examen.Repository.pdb
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Service\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Service\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Service\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Service\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Service\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Service\bin\Debug\EntityFramework.xml
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Service\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Service\obj\Debug\Examen.Service.csprojResolveAssemblyReference.cache
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Service\obj\Debug\Examen.Service.dll
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Service\obj\Debug\Examen.Service.pdb

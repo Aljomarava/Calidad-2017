@@ -3,3 +3,8 @@ C:\Users\bajos\documents\visual studio 2015\Projects\ExamenFinal\Examen.Domain\b
 C:\Users\bajos\documents\visual studio 2015\Projects\ExamenFinal\Examen.Domain\obj\Debug\Examen.Domain.csprojResolveAssemblyReference.cache
 C:\Users\bajos\documents\visual studio 2015\Projects\ExamenFinal\Examen.Domain\obj\Debug\Examen.Domain.dll
 C:\Users\bajos\documents\visual studio 2015\Projects\ExamenFinal\Examen.Domain\obj\Debug\Examen.Domain.pdb
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Domain\bin\Debug\Examen.Domain.dll
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Domain\bin\Debug\Examen.Domain.pdb
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Domain\obj\Debug\Examen.Domain.csprojResolveAssemblyReference.cache
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Domain\obj\Debug\Examen.Domain.dll
+C:\Users\luis\Source\Repos\Calidad-2017\ExamenFinal\Examen.Domain\obj\Debug\Examen.Domain.pdb
