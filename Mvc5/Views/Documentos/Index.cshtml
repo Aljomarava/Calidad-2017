@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Domain.Documentos>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Requerimientos De Documentos </h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", new { }, new { @class = "btn btn-success" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+       
+        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        
+       
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.DocumentosId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.DocumentosId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.DocumentosId })
+        </td>
+    </tr>
+}
+
+</table>

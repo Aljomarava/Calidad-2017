@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Domain.Curso>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Grado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Seccion)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Grado.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Seccion.Nombre)
+        </td>
+        <td>
+            <a href="@Url.Action("Edit", new { id = item.CursoId })" title="Edit"
+               style="margin-right: 3px;"
+               class="btn btn-warning btn-sm">
+                <i class="glyphicon glyphicon-pencil"></i>
+                <span class="sr-only">Edit</span>
+            </a>
+            <a href="@Url.Action("Details", new { id = item.CursoId })" title="Details"
+               style="margin-right: 3px;"
+               class="btn btn-primary btn-sm">
+                <i class="glyphicon glyphicon-list-alt"></i>
+                <span class="sr-only">Details</span>
+            </a>
+            <a href="@Url.Action("Delete", new { id = item.CursoId })" title="Delete"
+               style="margin-right: 3px;"
+               class="btn btn-danger btn-sm">
+                <i class="glyphicon glyphicon-trash"></i>
+                <span class="sr-only">Delete</span>
+            </a>
+             @*@Html.ActionLink("Edit", "Edit", new { id=item.CursoId })*@ 
+                     @*@Html.ActionLink("Details", "Details", new { id = item.CursoId }) |
+                     @Html.ActionLink("Delete", "Delete", new { id = item.CursoId })*@
+        </td>
+    </tr>
+}
+
+</table>

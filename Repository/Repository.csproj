@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6E7624D6-1919-4736-850F-82457062A4F6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Repository</RootNamespace>
+    <AssemblyName>Repository</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlumnoRepository.cs" />
+    <Compile Include="ApoderadoRepository.cs" />
+    <Compile Include="BimestreRepository.cs" />
+    <Compile Include="CursoRepository.cs" />
+    <Compile Include="DocenteRepository.cs" />
+    <Compile Include="DocuementosrRepository.cs" />
+    <Compile Include="EntregaDocumentosRepository.cs" />
+    <Compile Include="EspecialidadRepository.cs" />
+    <Compile Include="GradoRepository.cs" />
+    <Compile Include="IAlumnoRepository.cs" />
+    <Compile Include="IApoderadoRepository.cs" />
+    <Compile Include="IBimestreRepository.cs" />
+    <Compile Include="ICursoRepository.cs" />
+    <Compile Include="IDocenteRepository.cs" />
+    <Compile Include="IDocuementosrRepository.cs" />
+    <Compile Include="IEntregaDocumentosRepository.cs" />
+    <Compile Include="IEspecialidadRepository.cs" />
+    <Compile Include="IGradoRepository.cs" />
+    <Compile Include="INivelRepository.cs" />
+    <Compile Include="IPaisRepository.cs" />
+    <Compile Include="IParentescoRepository.cs" />
+    <Compile Include="ISeccionRepository.cs" />
+    <Compile Include="IUbigeoRepository.cs" />
+    <Compile Include="MasterRepository.cs" />
+    <Compile Include="Migrations\201708101430260_pais-ubigeo.cs" />
+    <Compile Include="Migrations\201708101430260_pais-ubigeo.Designer.cs">
+      <DependentUpon>201708101430260_pais-ubigeo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708111535139_apoderdo-ubigeo.cs" />
+    <Compile Include="Migrations\201708111535139_apoderdo-ubigeo.Designer.cs">
+      <DependentUpon>201708111535139_apoderdo-ubigeo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708111612229_todo.cs" />
+    <Compile Include="Migrations\201708111612229_todo.Designer.cs">
+      <DependentUpon>201708111612229_todo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708132110402_alumnosinapoderado.cs" />
+    <Compile Include="Migrations\201708132110402_alumnosinapoderado.Designer.cs">
+      <DependentUpon>201708132110402_alumnosinapoderado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708132158562_fechanac.cs" />
+    <Compile Include="Migrations\201708132158562_fechanac.Designer.cs">
+      <DependentUpon>201708132158562_fechanac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708141656361_docuemntos-entrega-alumno.cs" />
+    <Compile Include="Migrations\201708141656361_docuemntos-entrega-alumno.Designer.cs">
+      <DependentUpon>201708141656361_docuemntos-entrega-alumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708181854496_curso-grado-seccion.cs" />
+    <Compile Include="Migrations\201708181854496_curso-grado-seccion.Designer.cs">
+      <DependentUpon>201708181854496_curso-grado-seccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708241738185_alumnoedit.cs" />
+    <Compile Include="Migrations\201708241738185_alumnoedit.Designer.cs">
+      <DependentUpon>201708241738185_alumnoedit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="NivelRepository.cs" />
+    <Compile Include="PaisRepository.cs" />
+    <Compile Include="ParentescoRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SeccionRepository.cs" />
+    <Compile Include="SystemContext.cs" />
+    <Compile Include="UbigeoRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{c1231a30-4aaf-4128-9808-1cad133dcd88}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201708101430260_pais-ubigeo.resx">
+      <DependentUpon>201708101430260_pais-ubigeo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708111535139_apoderdo-ubigeo.resx">
+      <DependentUpon>201708111535139_apoderdo-ubigeo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708111612229_todo.resx">
+      <DependentUpon>201708111612229_todo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708132110402_alumnosinapoderado.resx">
+      <DependentUpon>201708132110402_alumnosinapoderado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708132158562_fechanac.resx">
+      <DependentUpon>201708132158562_fechanac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708141656361_docuemntos-entrega-alumno.resx">
+      <DependentUpon>201708141656361_docuemntos-entrega-alumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708181854496_curso-grado-seccion.resx">
+      <DependentUpon>201708181854496_curso-grado-seccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708241738185_alumnoedit.resx">
+      <DependentUpon>201708241738185_alumnoedit.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

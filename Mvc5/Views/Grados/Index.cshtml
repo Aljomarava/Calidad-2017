@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Domain.Grado>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+   
+</p>
+
+@using (Html.BeginForm("Index", "Grados", FormMethod.Get))
+{
+
+    <div class="form-inline">
+        @*<div class="form-group">*@
+        @Html.Label("Criterio:")
+        @Html.TextBox("criterio", "", new { @class = "form-control" })
+
+        @Html.Label("  Nivel :")
+        @Html.DropDownList("nivel", ViewBag.nivel as SelectList, "[-- Seleccione --]", new { @class = "form-control" })
+        @*</div>*@
+        <button type="submit" class="btn btn-danger">Buscar</button>
+        @Html.ActionLink("Create New", "Create", new { }, new { @class = "btn btn-success" })
+    </div>
+    <br />
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GradoId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NivelId)
+        </th>
+       
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GradoId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NivelId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.GradoId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.GradoId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.GradoId })
+        </td>
+    </tr>
+}
+
+</table>

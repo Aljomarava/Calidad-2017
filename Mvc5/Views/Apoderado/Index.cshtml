@@ -1,0 +1,85 @@
+﻿@model IEnumerable<Domain.Apoderado>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Indexxx</h2>
+
+
+   
+
+@using (Html.BeginForm("Index","Apoderado", FormMethod.Get)) { 
+<div class="form-inline">
+    @Html.Label("Criterio :")
+    @Html.TextBox("criterio","",new { @class="form-control"})
+    <button type="submit" class="btn btn-danger">Buscar</button>
+    @Html.ActionLink("Create New", "Create", new { } ,new { @class = "btn btn-success" })
+</div>
+    <br />
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombres)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Apellidos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dni)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.masculino)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Femenino)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Celular)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Direccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UbigeoId)
+        </th>
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombres)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Apellidos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dni)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.masculino)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Femenino)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Celular)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Direccion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UbigeoId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ApoderadoId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ApoderadoId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ApoderadoId })
+        </td>
+    </tr>
+}
+
+</table>

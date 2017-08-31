@@ -1,0 +1,42 @@
+﻿@model Domain.EntregaDocuentos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EntregaDocuentos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DocumentosId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DocumentosId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlumnoId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlumnoId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Entregado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Entregado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EntregaDocuentosId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

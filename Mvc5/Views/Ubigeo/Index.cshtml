@@ -1,0 +1,74 @@
+﻿@model IEnumerable<Domain.Ubigeo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+@using (Html.BeginForm("Index", "Ubigeo", FormMethod.Get))
+{
+
+    <div class="form-inline">
+        @*<div class="form-group">*@
+            @Html.Label("Criterio:")
+            @Html.TextBox("criterio", "", new { @class = "form-control" })
+
+            @Html.Label("  Pais :")
+            @Html.DropDownList("pais", ViewBag.Pa as SelectList, "[-- Seleccione --]", new { @class = "form-control" })
+        @*</div>*@
+        <button type="submit" class="btn btn-danger">Buscar</button>
+    </div>
+    <br />
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Codigo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Departamento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Provincia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Distrito)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PaisId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Codigo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Departamento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Provincia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Distrito)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PaisId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.UbigeoId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.UbigeoId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.UbigeoId })
+        </td>
+    </tr>
+}
+
+</table>

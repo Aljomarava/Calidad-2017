@@ -1,0 +1,98 @@
+﻿@model Domain.Docente
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Docente</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombres)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Apellidos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Apellidos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.correo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.correo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.masculino)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.masculino)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Femenino)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Femenino)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Celular)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Celular)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Direccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Direccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EspecialidadId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EspecialidadId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CursoId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CursoId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UbigeoId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UbigeoId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DocenteId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
