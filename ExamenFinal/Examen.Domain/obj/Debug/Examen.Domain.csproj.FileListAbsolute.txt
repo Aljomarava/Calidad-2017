@@ -1,5 +1,0 @@
-C:\Users\bajos\documents\visual studio 2015\Projects\ExamenFinal\Examen.Domain\bin\Debug\Examen.Domain.dll
-C:\Users\bajos\documents\visual studio 2015\Projects\ExamenFinal\Examen.Domain\bin\Debug\Examen.Domain.pdb
-C:\Users\bajos\documents\visual studio 2015\Projects\ExamenFinal\Examen.Domain\obj\Debug\Examen.Domain.csprojResolveAssemblyReference.cache
-C:\Users\bajos\documents\visual studio 2015\Projects\ExamenFinal\Examen.Domain\obj\Debug\Examen.Domain.dll
-C:\Users\bajos\documents\visual studio 2015\Projects\ExamenFinal\Examen.Domain\obj\Debug\Examen.Domain.pdb
